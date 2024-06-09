@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Yunseon's Homepage</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="홈페이지, 윤선, 개인 블로그" name="keywords">
+        <meta content="Yunseon's personal homepage" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!--Font awseome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+        <style>
+            .line-break {
+                display: block;
+                margin-top: 10px;
+            }
+        </style>
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="top-bar-left">
+                            <div class="text">
+                                <i class="introduction"></i>
+                                <h2>2023204050 정보융합학부 장윤선</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="top-bar-right">
+                            <div class="social">
+                                <a href="https://github.com/yunseonyy" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                                <a href="https://www.instagram.com/yoonn_sunn/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Jang<span>Yun</span>Seon</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- introduce start -->
+        <div class="introduce">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="introduce-text">
+                            <h1>
+                                안녕하세요.<span class="line-break"></span>
+                                UX/UI 디자이너의<span class="line-break"></span><span class="line-break"></span>
+                                꿈을 꾸는<span class="line-break"></span>
+                                장윤선입니다.
+                            </h1>
+                            <p>
+                                UX/UI 디자이너는 사용자 경험(User Experience, UX)과 사용자 인터페이스(User Interface, UI)를 설계하고 최적화하는 전문가입니다. 이 직무는 제품이나 서비스가 사용자에게 어떻게 보이고 느껴지는지, 그리고 사용자가 어떻게 상호작용하는지를 설계하는 것을 중심으로 합니다.
+                            </p>
+                            <div class="introduce-btn">
+                                <!-- 버튼이 필요하면 여기에 추가 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                        <div class="profile-image">
+                            <img src="img/profile.png" alt="Yunseon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- introduce End -->
+
+
+        <!-- Hobby Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-img">
+                            <img src="img/airplane.jpg" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="section-header text-left">
+                            <p>취미</p>
+                            <h2>여행 다니기</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                저는 여행 다니기를 좋아합니다.
+                            </p>
+                            <p>
+                                여행을 다니면서 새로운 지역에서 느끼는 분위기를 좋아합니다. 또한 그 지역의 대표 맛집 음식들을 먹는 것을 좋아합니다. 여행을 다니면서 힐링도 하고 좋은 추억도 쌓는 것이 좋아 주기적으로 여행을 다닙니다. 
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Hobby End -->
+
+
+        <!-- Travel Start -->
+        <div class="travel">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>가장 기억에 남은 여행지</p>
+                    <h2>다녀왔던 국내&해외 여행지</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="travel-item">
+                            <div class="travel-icon">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <h3>일본 오사카</h3>
+                            <p>
+                                일본 오사카는 저의 첫 일본 여행이기도 하고 중학교 친구와 중학교 때 약속을 한 여행입니다. 그래서 오랫동안 잊지못할 추억이 될 것 같습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="travel-item">
+                            <div class="travel-icon">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <h3>일본 도쿄</h3>
+                            <p>
+                                일본 도쿄는 7박 8일 동안 길게 다녀온 여행입니다. 2024년 1월 1일, 새해를 일본에서 맞이하여 더욱 더 기억에 남는 여행이었습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="travel-item">
+                            <div class="travel-icon">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <h3>괌</h3>
+                            <p>
+                                가족들이랑 첫 해외여행이었습니다. 괌 여행을 생각하면 아직도 생생하게 떠오를 정도로 좋은 추억입니다. 호텔에서 햄버거를 맛있게 먹었던 햄버거를 다시 한 번 먹어보고싶습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="travel-item">
+                            <div class="travel-icon">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <h3>태국</h3>
+                            <p>
+                                엄마랑 단 둘이 해외 여행을 간 여행입니다. 여행 끝에 엄마랑 저랑 한국에 가기 싫어했던 기억이 납니다. 태국에 도착하자마자 태국의 향과 습도가 아직도 기억에 남습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="travel-item">
+                            <div class="travel-icon">
+                                <i class="fa-solid fa-car"></i>
+                            </div>
+                            <h3>강릉</h3>
+                            <p>
+                                무계획으로 갔던 강릉 여행이었습니다. 경포생태저류지의 장소가 가장 기억에 남습니다. 사람이 별로 없어서 예쁜 풍경들을 많이 담을 수 있었습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                        <div class="travel-item">
+                            <div class="travel-icon">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <h3>제주도</h3>
+                            <p>
+                                제주도는 많이 갔지만 갈 때마다 다른 사람들이랑 가서 각각 다른 추억들이 쌓인 곳입니다. 제주도를 가면 다양한 추억들을 상기할 수 있어서 좋습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Travel End -->
+        
+        
+        <!-- Book Start -->
+        <div class="book">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>취미: 독서</p>
+                    <h2>내가 재밌게 읽은 책</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="book-item">
+                            <div class="book-header">
+                                <div class="book-title">
+                                    <h2>세상의 마지막 기차역</h2>
+                                </div>
+                                <div class="book-prices">
+                                    <h2><small>무라세 다케시 모모</small></h2>
+                                </div>
+                            </div>
+                            <div class="book-body">
+                                <img src="img/First_book.png" alt="Image">
+                            </div>
+                            <div class="book-footer">
+                                <div class="book-action">
+                                    <a class="btn" href="https://search.shopping.naver.com/book/catalog/32445197656?cat_id=50005755&frm=PBOKMOD&query=%EC%84%B8%EC%83%81%EC%9D%98+%EB%A7%88%EC%A7%80%EB%A7%89+%EA%B8%B0%EC%B0%A8%EC%97%AD&NaPm=ct%3Dlx1gqzcg%7Cci%3Daf50423c77eee667f265073fea5d664331fd8220%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3Df3028263d0437cbabcea44845d047491e04e6b0f" target="_blank">책소개</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="book-item featured-item">
+                            <div class="book-header">
+                                <div class="book-title">
+                                    <h2>칵테일, 러브, 좀비</h2>
+                                </div>
+                                <div class="book-prices">
+                                    <h2><small>조예은</small></h2>
+                                </div>
+                            </div>
+                            <div class="book-body">
+                                <img src="img/Second_book.png" alt="Image">
+                            </div>
+                            <div class="book-footer">
+                                <div class="book-action">
+                                    <a class="btn" href="https://search.shopping.naver.com/book/catalog/32463732976?cat_id=50005769&frm=PBOKPRO&query=%EC%B9%B5%ED%85%8C%EC%9D%BC+%EB%9F%AC%EB%B8%8C+%EC%A2%80%EB%B9%84&NaPm=ct%3Dlx1grn9k%7Cci%3D11b9fbcc3a2871eb1e93a650e51cacca8b3df98d%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D90e21c2879aea245e7df594d7591f97b6e24093f" target="_blank">책소개</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="book-item">
+                            <div class="book-header">
+                                <div class="book-title">
+                                    <h2>지구 끝의 온실</h2>
+                                </div>
+                                <div class="book-prices">
+                                    <h2><small>김초엽</small></h2>
+                                </div>
+                            </div>
+                            <div class="book-body">
+                                <img src="img/Third_book.png" alt="Image">
+                            </div>
+                            <div class="book-footer">
+                                <div class="book-action">
+                                    <a class="btn" href="https://search.shopping.naver.com/book/catalog/32475579086?cat_id=50010002&frm=PBOKMOD&query=%EC%A7%80%EA%B5%AC+%EB%81%9D%EC%9D%98+%EC%98%A8%EC%8B%A4&NaPm=ct%3Dlx1goim0%7Cci%3D7c757c4f25ebb3c6a74cf7b997db11a12da37099%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D109ef87d73b7d77a71678e965a029337df0b40f2" target="_blank">책소개</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Book End -->
+
+
+        <!-- MBTI Start -->
+        <div class="mbti">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <h2>MBTI</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="mbti-item">
+                            <div class="mbti-img">
+                                <img src="img/I.png" alt="Image">
+                            </div>
+                            <div class="mbti-text">
+                                <h2>내향형</h2>
+                                <p>내면, 생각</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="mbti-item">
+                            <div class="mbti-img">
+                                <img src="img/S.png" alt="Image">
+                            </div>
+                            <div class="mbti-text">
+                                <h2>감각</h2>
+                                <p>현실, 실용, 실천</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="mbti-item">
+                            <div class="mbti-img">
+                                <img src="img/F.png" alt="Image">
+                            </div>
+                            <div class="mbti-text">
+                                <h2>감정</h2>
+                                <p>인간관계, 가치판단</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="mbti-item">
+                            <div class="mbti-img">
+                                <img src="img/P.png" alt="Image">
+                            </div>
+                            <div class="mbti-text">
+                                <h2>인식</h2>
+                                <p>자율성, 유동성</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MBTI End -->
+
+
+        <!-- Goal Start -->
+        <div class="goal">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>학업적 목표</p>
+                    <h2>2024년 달성하고자 하는 바</h2>
+                </div>
+                <div class="owl-carousel goal-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="goal-item">
+                        <div class="goal-img">
+                            <img src="img/Math.jpg" alt="Math">
+                        </div>
+                        <div class="goal-text">
+                            <h2>여름방학 때 미적분 공부하기</h2>
+                            <p>
+                                저는 문과이었기 때문에 미적분에 대한 지식이 부족하여 방학 때 미적분을 공부할 것입니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-img">
+                            <img src="img/Dean's.jpg" alt="Dean's">
+                        </div>
+                        <div class="goal-text">
+                            <h2>2학기 Dean's List 수상</h2>
+                            <p>
+                                사실 졸업하기 전에 Dean's List를 수상해보고 졸업하고 싶어서 매 학기마다 목표로 잡고 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-img">
+                            <img src="img/python.jpg" alt="python">
+                        </div>
+                        <div class="goal-text">
+                            <h2>파이썬 데이터 분석 익히기</h2>
+                            <p>
+                                빅데이터프로그래밍 과목을 수강하다가 데이터 분석하는 것에 흥미를 느껴서 이 부분에 대해 더 공부하고 싶다는 마음이 생겼습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-img">
+                            <img src="img/Git.jpg" alt="Blog">
+                        </div>
+                        <div class="goal-text">
+                            <h2>Github 익숙해지기</h2>
+                            <p>
+                                오픈소스소프트웨어 과목을 수강하면서 과제를 수행하면서 Github이 중요하다고 느껴져서 Github를 능숙하게 활용하고 싶습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-img">
+                            <img src="img/exam.jpg" alt="Blog">
+                        </div>
+                        <div class="goal-text">
+                            <h2>자격증 취득하기</h2>
+                            <p>
+                                내가 하고자 하는 분야에 대해 전문적인 지식을 가지고 싶어서 자격증 취득을 하고 싶습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-img">
+                            <img src="img/java.jpg" alt="Blog">
+                        </div>
+                        <div class="goal-text">
+                            <h2>자바 문법 복습, 익히기</h2>
+                            <p>
+                                2학년 1학기 수강 과목 중 자바를 다루는 것이 가장 어려워서 방학 때 자바에 대한 부족한 부분들을 채우고 싶습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Goal End -->
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <a href="index.html" class="footer-logo">My information</a>
+                        <h3>광운대학교 정보융합학부</h3>
+                        <div class="footer-menu">
+                            <p>010-4593-6875</p>
+                            <p>dbstjs2587@naver.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="todo.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1114 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #797979;
+    background: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #343148;
+}
+
+a {
+    color: #454545;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #F7CAC9;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:focus,
+.form-control:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    max-width: 1366px;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #F7CAC9;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 9;
+}
+
+.back-to-top:hover {
+    background: #343148;
+}
+
+.back-to-top:hover i {
+    color: #F7CAC9;
+}
+
+.back-to-top i {
+    color: #343148;
+    padding-top: 10px;
+}
+
+
+/**********************************/
+/********** Top Bar CSS ***********/
+/**********************************/
+.top-bar {
+    position: relative;
+    height: 35px;
+    background: #343148;
+}
+
+.top-bar .top-bar-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.top-bar .top-bar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.top-bar .text {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.top-bar .text i {
+    font-size: 13px;
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+.top-bar .text h2 {
+    color: #eeeeee;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.top-bar .social {
+    display: flex;
+    height: 35px;
+    font-size: 0;
+    justify-content: flex-end;
+}
+
+.top-bar .social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 100%;
+    font-size: 16px;
+    color: #ffffff;
+    border-right: 1px solid rgba(255, 255, 255, .15);
+}
+
+.top-bar .social a:first-child {
+    border-left: 1px solid rgba(255, 255, 255, .15);
+}
+
+.top-bar .social a:hover {
+    color: #092a49;
+    background: #ffffff;
+}
+
+@media (min-width: 992px) {
+    .top-bar {
+        padding: 0 60px;
+    }
+}
+
+
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+}
+
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 2px;
+    transition: .5s;
+    
+}
+
+.navbar .navbar-brand span {
+    color: #343148;
+    text-transform: none;
+    transition: .5s;
+}
+
+.navbar.nav-sticky .navbar-brand span {
+    color: #ffffff;
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+    max-height: 40px;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    padding: 10px 10px 8px 10px;
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    background: rgba(256, 256, 256, .1);
+    transition: none;
+}
+
+.navbar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        top: 35px;
+        padding: 20px 60px;
+        background: rgba(0, 0, 0, .1) !important;
+        z-index: 9;
+    }
+    
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #343148 !important;
+    }
+    
+    .navbar a.nav-link {
+        padding: 8px 15px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: none;
+    }
+}
+
+@media (max-width: 991.98px) {   
+    .navbar {
+        padding: 15px;
+        background: #343148 !important;
+    }
+    
+    .navbar .navbar-brand span {
+        color: #ffffff;
+    }
+    
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+    
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+
+/*******************************/
+/********** introduce CSS ***********/
+/*******************************/
+.introduce {
+    position: relative;
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 110px 0;
+    background: #F7CAC9;
+    overflow: hidden;
+}
+
+.introduce .container-fluid {
+    padding: 0;
+}
+
+.introduce .introduce-text {
+    position: relative;
+    padding-left: 75px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.introduce .introduce-text h1 {
+    color: #343148;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.introduce .introduce-text p {
+    color: #343148;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.profile-image {
+    position: relative;
+    text-align: center; /* 중앙 정렬로 변경 */
+}
+
+.profile-image img {
+    max-width: 100%; /* 최대 너비 100%로 설정 */
+    height: auto; /* 높이를 자동으로 설정 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    border-radius: 40px; /* 이미지를 둥글게 */
+}
+
+@media (max-width: 991.98px) {
+    .introduce .introduce-text {
+        padding: 0 15px;
+    }
+    
+    .introduce .introduce-text h1 {
+        font-size: 35px;
+    }
+    
+    .introduce .introduce-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .introduce .introduce-text h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .introduce .introduce-text p {
+        font-size: 14px;
+    }
+
+    .profile-image {
+        text-align: center; /* 모바일에서도 중앙 정렬 유지 */
+    }
+}
+
+@media (max-width: 575.98px) {
+    .introduce .introduce-text h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .introduce .introduce-text p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+/*******************************/
+/******* Page Header CSS *******/
+/*******************************/
+.page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 150px 0 90px 0;
+    text-align: center;
+    background: #F7CAC9;
+}
+
+.page-header h2 {
+    position: relative;
+    color: #343148;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.page-header a {
+    position: relative;
+    padding: 0 12px;
+    font-size: 22px;
+    color: #343148;
+}
+
+.page-header a:hover {
+    color: #ffffff;
+}
+
+.page-header a::after {
+    position: absolute;
+    content: "/";
+    width: 8px;
+    height: 8px;
+    top: -2px;
+    right: -7px;
+    text-align: center;
+    color: #343148;
+}
+
+.page-header a:last-child::after {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .page-header h2 {
+        font-size: 35px;
+    }
+    
+    .page-header a {
+        font-size: 18px;
+    }
+}
+
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.section-header p {
+    display: inline-block;
+    margin: 0 30px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    background: #ffffff;
+}
+
+.section-header p::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    top: 11px;
+    right: -30px;
+    left: -30px;
+    background: #F7CAC9;
+    z-index: -1;
+}
+
+.section-header h2 {
+    margin: 0;
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+    .section-header h2 {
+        font-size: 30px;
+    }
+}
+
+
+/*******************************/
+/********** Hobby CSS **********/
+/*******************************/
+.about {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.about .section-header {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.about .about-img {
+    position: relative;
+    height: 100%;
+}
+
+.about .about-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.about .about-text p {
+    font-size: 16px;
+}
+
+@media (max-width: 767.98px) {
+    .about .about-img {
+        margin-bottom: 30px;
+        height: auto;
+    }
+}
+
+
+
+/*******************************/
+/********* Travel CSS *********/
+/*******************************/
+.travel {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.travel .travel-item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, .07);
+    transition: .3s;
+}
+
+.travel .travel-item:hover {
+    background: #343148;
+    color: #ffffff;
+}
+
+.travel .travel-item.active {
+    background: #ffffff;
+    color: #000000;
+}
+
+.travel .travel-item.active:hover {
+    background: #343148;
+    color: #ffffff;
+}
+
+.travel .travel-icon {
+    position: relative;
+    margin: 0 auto 25px auto;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.travel .travel-icon i {
+    position: relative;
+    font-size: 50px;
+    color: #343148;
+    z-index: 3;
+}
+
+.travel .travel-icon:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #F7CAC9;
+    border-radius: 50%;
+    animation: pulse-border 2000ms ease-out infinite;
+}
+
+.travel .travel-icon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #F7CAC9;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+    opacity: 0;
+  }
+}
+
+.travel .travel-item h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.travel .travel-item:hover h3,
+.travel .travel-item.active:hover h3 {
+    color: #F7CAC9;
+}
+
+.travel .travel-item.active h3 {
+    color: #343148;
+}
+
+.travel .travel-item p {
+    margin: 0;
+    font-size: 16px;
+    color: inherit;
+}
+
+
+
+
+
+/*******************************/
+/********* Book CSS *********/
+/*******************************/
+.book {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.book .book-item {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.book .book-header,
+.book .book-body,
+.book .book-footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.book .book-header {
+    padding: 30px;
+    background: #F7CAC9;
+    color: #343148;
+}
+
+.book .book-item.featured-item .book-header {
+    background: #343148;
+    color: #F7CAC9;
+}
+
+.book .book-title h2 {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.book .book-prices h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.book .book-prices h2 small {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 9px;
+    text-align: center;
+}
+
+.book .book-prices h2 span {
+    margin-left: 1px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.book .book-item.featured-item h2 {
+    color: #F7CAC9;
+}
+
+.book .book-body {
+    padding: 25px 0 20px 0;
+    border: 1px solid rgba(0, 0, 0, .07);
+    border-bottom: none;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book .book-body img {
+    max-width: 100%; /* 이미지를 컨테이너 너비에 맞춤 */
+    max-height: 100%; /* 이미지를 컨테이너 높이에 맞춤 */
+    object-fit: contain; /* 이미지 비율을 유지하면서 컨테이너에 맞춤 */
+}
+
+.book .book-footer {
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, .07);
+    border-top: none;
+}
+
+.book .book-action a.btn {
+    margin-bottom: 30px;
+    padding: 12px 20px;
+    color: #343148;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 0;
+    background: #F7CAC9;
+    transition: .3s;
+}
+
+.book .book-action a:hover,
+.book .book-item.featured-item .book-action a {
+    color: #F7CAC9;
+    background: #343148;
+}
+
+.book .book-item.featured-item .book-action a:hover {
+    color: #343148;
+    background: #F7CAC9;
+}
+
+
+
+
+
+
+/*******************************/
+/*********** MBTI CSS **********/
+/*******************************/
+.mbti {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.mbti .mbti-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, .07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mbti .mbti-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 100%; /* 1:1 비율을 유지 */
+}
+
+.mbti .mbti-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 이미지 비율을 유지하면서 컨테이너에 맞춤 */
+}
+
+.mbti .mbti-text {
+    position: relative;
+    padding: 25px 15px 10px 15px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.mbti .mbti-text h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mbti .mbti-text p {
+    margin: 0;
+}
+
+
+
+
+
+/*******************************/
+/*********** Goal CSS **********/
+/*******************************/
+.blog {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.blog .blog-carousel {
+    position: relative;
+    width: calc(100% + 30px);
+    left: -15px;
+    right: -15px;
+}
+
+.blog .blog-item {
+    position: relative;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; /* 고정된 높이 설정 */
+    overflow: hidden; /* 텍스트가 넘칠 때 숨기기 */
+}
+
+.blog .blog-img {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 비율을 유지 */
+    overflow: hidden;
+}
+
+.blog .blog-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 이미지 비율을 유지하면서 컨테이너에 맞춤 */
+}
+
+.blog .blog-text {
+    position: relative;
+    padding: 25px 30px;
+    border-right: 1px solid rgba(0, 0, 0, .07);
+    border-bottom: 1px solid rgba(0, 0, 0, .07);
+    border-left: 1px solid rgba(0, 0, 0, .07);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.blog .blog-text h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.blog .blog-text p {
+    flex-grow: 1;
+    margin-bottom: 10px;
+    overflow: hidden; /* 텍스트가 넘칠 때 숨기기 */
+    text-overflow: ellipsis; /* 넘친 텍스트를 '...'로 표시 */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 보여줄 최대 줄 수 */
+    -webkit-box-orient: vertical;
+}
+
+.blog .blog-item a.btn {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343148;
+    transition: .3s;
+}
+.goal {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.goal .goal-carousel {
+    position: relative;
+    width: calc(100% + 30px);
+    left: -15px;
+    right: -15px;
+}
+
+.goal .goal-item {
+    position: relative;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; /* 고정된 높이 설정 */
+    overflow: hidden; /* 텍스트가 넘칠 때 숨기기 */
+}
+
+.goal .goal-img {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 비율을 유지 */
+    overflow: hidden;
+}
+
+.goal .goal-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 이미지 비율을 유지하면서 컨테이너에 맞춤 */
+}
+
+.goal .goal-text {
+    position: relative;
+    padding: 25px 30px;
+    border-right: 1px solid rgba(0, 0, 0, .07);
+    border-bottom: 1px solid rgba(0, 0, 0, .07);
+    border-left: 1px solid rgba(0, 0, 0, .07);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.goal .goal-text h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.goal .goal-text p {
+    flex-grow: 1;
+    margin-bottom: 10px;
+    overflow: hidden; /* 텍스트가 넘칠 때 숨기기 */
+    text-overflow: ellipsis; /* 넘친 텍스트를 '...'로 표시 */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 보여줄 최대 줄 수 */
+    -webkit-box-orient: vertical;
+}
+
+.goal .goal-item a.btn {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343148;
+    transition: .3s;
+}
+
+.goal .goal-item a.btn i {
+    margin-left: 5px;
+}
+
+.goal .goal-item a.btn:hover {
+    color: #F7CAC9;
+}
+
+.goal .owl-nav {
+    width: 150px;
+    margin: 32px auto 0 auto;
+    display: flex;
+}
+
+.goal .owl-nav .owl-prev,
+.goal .owl-nav .owl-next {
+    margin-left: 15px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F7CAC9;
+    background: #343148;
+    font-size: 22px;
+    transition: .3s;
+}
+
+.goal .owl-nav .owl-prev:hover,
+.goal .owl-nav .owl-next:hover {
+    color: #343148;
+    background: #F7CAC9;
+}
+
+
+
+
+/*******************************/
+/********* Contact CSS *********/
+/*******************************/
+/*.container{
+    width: 50vw;
+    margin: 20pxauto;
+    padding: 0px20px20px20px;
+    background: #ddd;
+    box-shadow: 0030pxrgba(67, 79, 250, 0.5);
+}
+*/
+.guestbook-author, .guestbook-content {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.guestbook-content {
+    resize: vertical;
+}
+
+.add-guestbook-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-guestbook-btn:hover {
+    background-color: #0056b3;
+}
+
+.guestbooks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.guestbook-item {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.guestbook-item:hover {
+    background-color: #ddd;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #ff1a1a;
+}
+
+
+
+
+
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+.footer {
+    position: relative;
+    margin-top: 45px;
+    background: #000000;
+}
+
+.footer .container-fluid {
+    padding: 40px 0 40px 0;
+    background: linear-gradient(rgba(52, 49, 72, .9), rgba(52, 49, 72, .9)), url(../img/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer .footer-info {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.footer .footer-info .footer-logo {
+    display: inline-block;
+    color: #F7CAC9;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.footer .footer-info h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer .footer-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-menu p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 0 10px;
+    border-right: 1px solid #ffffff;
+}
+
+.footer .footer-menu p:last-child {
+    border: none;
+}
+
+@media (max-width: 767.98px) {
+    .footer .footer-menu p {
+        border: none;
+    }
+}
